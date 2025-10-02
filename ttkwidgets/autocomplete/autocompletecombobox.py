@@ -23,6 +23,7 @@ class AutocompleteCombobox(ttk.Combobox):
         :type master: widget
         :param completevalues: autocompletion values
         :type completevalues: list
+        :param sort: sort autocompletion values, default is True for backwards compatibility with older versions
         :type sort: boolean (default: True)
         :param kwargs: keyword arguments passed to the :class:`ttk.Combobox` initializer
         """
