@@ -7,9 +7,12 @@
 [![Documentation Status](https://readthedocs.org/projects/ttkwidgets/badge/?version=latest)](https://ttkwidgets.readthedocs.io/en/latest/)
 
 A collection of widgets for Tkinter's ttk extensions by various authors.
+Modified version with small changes:
+- Optional sorting for `ttkwidgets.autocomplete.AutocompleteCombobox`
 
 ## License
     ttkwidgets: A collection of widgets for Tkinter's ttk extensions by various authors 
+    Copyright (c) 2025 Mason Fisher
     Copyright (c) 2008-2022 The ttkwidgets authors
     See AUTHORS.md for more details
     
