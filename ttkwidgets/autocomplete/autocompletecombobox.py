@@ -78,11 +78,11 @@ bind $popdown.f.l <KeyPress> [list ComboListKeyPressed %%W %%K]
         :type completion_list: list
         """
         
+        # Clone the list to avoid unintentional modifications to the input list
+        self._completion_list = completion_list[:]
         if self._sort:
             # Work with a sorted list if sorting is enabled
-            self._completion_list = sorted(completion_list, key=str.lower)
-        else:
-            self._completion_list = completion_list
+            self._completion_list.sort(key=str.lower)
         self.configure(values=completion_list)
         self._hits = []
         self._hit_index = 0
